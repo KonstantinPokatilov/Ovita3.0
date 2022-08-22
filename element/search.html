@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Овита</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/basket.css">
+        <link rel="stylesheet" href="/css/search.css">
+    </head>
+<body>
+    <header>
+        <div class="main-header">
+            <div class="container">
+                <a class="ovita-logo" href="/"></a>
+                <div class="main-header-address">Владивосток</div>
+                <a href="tel:+742322404404" class="phone-number">+7 (423) 2-404-404</a>
+            </div>
+        </div>
+        <div class="filter-header">
+            <div class="container">
+                <div class="filter-catalog" but>Каталог</div>
+                <div class="filter-search">
+                    <input class="input-search" placeholder="Поиск по каталогу">
+                </div>
+                <a href="/element/favorites.html" class="filter-favorites" ></a>
+                <a href="/element/orders.html" class="filter-order"></a>
+                <a href="/element/basket.html" class="basket">
+                    <div class="basket-counter"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main search>
+        <div class="products-container">
+            <div class="form-container">
+                <div class="search-filter">Фильтр</div>
+                <div class="search-filter-price" prop="filter-arrow">
+                    <img src="/img/arrow-filter.svg" class="filter-arrow">
+                    Цена
+                </div>
+                <div prop="price" invisible>
+                    <input type="number" placeholder="от">
+                    <input type="number" placeholder="до">
+                </div>
+                <div class="search-filter-form" prop="filter-arrow">
+                    <img src="/img/arrow-filter.svg" class="filter-arrow">
+                    Форма выпуска
+                </div>
+                <div prop="form" invisible>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox1">
+                            <label for="checkbox1" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Таблетки</div>
+                    </div>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox2">
+                            <label for="checkbox2" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Капсулы</div>
+                    </div>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox3">
+                            <label for="checkbox3" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Мази</div>
+                    </div>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox4">
+                            <label for="checkbox4" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Эмульсии</div>
+                    </div>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox5">
+                            <label for="checkbox5" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Свечи</div>
+                    </div>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox6">
+                            <label for="checkbox6" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Растворы для инъекций</div>
+                    </div>
+                </div>
+                <div class="search-filter-provider" prop="filter-arrow">
+                    <img src="/img/arrow-filter.svg" class="filter-arrow">
+                    Производитель
+                </div>
+                <div prop="provider" invisible>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox7">
+                            <label for="checkbox7" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Байер Фарма АГ</div>
+                    </div>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox8">
+                            <label for="checkbox8" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Лаборатуар Теа</div>
+                    </div>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox9">
+                            <label for="checkbox9" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Shreya Life Sciences Pvt.</div>
+                    </div>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox10">
+                            <label for="checkbox10" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Ирбитский химфармзавод</div>
+                    </div>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox11">
+                            <label for="checkbox11" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Велфарм</div>
+                    </div>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox12">
+                            <label for="checkbox12" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Борисовский завод медицинских препаратов</div>
+                    </div>
+                </div>
+                <div class="search-filter-country" prop="filter-arrow">
+                    <img src="/img/arrow-filter.svg" class="filter-arrow">
+                    Страна
+                </div>
+                <div prop="country" invisible>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox13">
+                            <label for="checkbox13" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Россия</div>
+                    </div>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox14">
+                            <label for="checkbox14" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Австрия</div>
+                    </div>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox15">
+                            <label for="checkbox15" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Италия</div>
+                    </div>
+                    <div class="form-checkboxes">
+                        <div class="checkbox-block">
+                            <input type="checkbox" class="other-checkbox" id="checkbox16">
+                            <label for="checkbox16" class="other-checkbox-label"></label>
+                        </div>
+                        <div>Германия</div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-block">
+                <div class="elements-sorting">
+                    <div class="name-price-sorting">Цена по возрастанию</div>
+                    <div class="elements-sorting-count">
+                        <div select>30</div>
+                        <div>60</div>
+                        <div>120</div>
+                    </div>
+                    <div class="sorting-types-container" invisible>
+                        <div class="sorting-type" prop="cheap">
+                            <div class="type-circle" select></div>
+                            <div class="type-title">Сначала дешевые</div>
+                        </div>
+                        <div class="sorting-type" prop="expencive">
+                            <div class="type-circle"></div>
+                            <div class="type-title">Сначала дорогие</div>
+                        </div>
+                        <div class="sorting-type" prop="AZ" >
+                            <div class="type-circle"></div>
+                            <div class="type-title">От А до Я</div>
+                        </div>
+                        <div class="sorting-type" prop="ZA">
+                            <div class="type-circle"></div>
+                            <div class="type-title">От Я до А</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="base-inform">
+                        <div class="product-pic">
+                            <img src="/img/abaktal.jpg">
+                        </div>
+                        <div class="titels">
+                            <div>
+                                <div class="product-name-basket">
+                                    Бисептол 480 ампулы 96мг/мл №10 концентрат для приготовления раствора для инфузии
+                                </div>
+                                <div class="product-provide">
+                                    <img class="provide-factory" src="/img/factory.svg">
+                                    <div class="provide-text">ICN Polfa Rzeszow S.A.</div>
+                                </div>
+                            </div>
+                            <div class="product-buttons">
+                                <div class="product-available product-available-pharmacy" but>1</div>
+                                <div class="change-pharmacy-but" but>Сменить аптеку</div>
+                            </div>
+                        </div>
+                        <div class="price-block">
+                            <div class="price-element">
+                                <div>
+                                    <div class="price product-price price-sale">
+                                        <div class="sale">12 789</div>
+                                        <div class="sale-pen">00</div>
+                                    </div>
+                                    <div class="product-discount">Скидка -15%</div>
+                                </div>
+                                <div class="product-buy-btn" but>В корзину</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uniq-inform">
+                        <div class="uniq-inform-text">Подавляет болезнетворные микроорганизмы</div>
+                        <div class="favor-heart full-heart" but>В избранном</div>
+                    </div>
+                    <div class="grade-mark">
+                        <div heartGrade></div>
+                    </div>
+                    <div class="grade-mark2">
+                        <div closeout></div>
+                    </div>
+
+                    <div class="grade-mark3">
+                        <div top></div>
+                    </div>
+                </div>  
+                <div class="product">
+                    <div class="base-inform">
+                        <div class="product-pic">
+                            <img src="/img/abaktal.jpg">
+                        </div>
+                        <div class="titels">
+                            <div>
+                                <div class="product-name-basket">
+                                    Бисептол 480 ампулы 96мг/мл №10 концентрат для приготовления раствора для инфузии
+                                </div>
+                                <div class="product-provide">
+                                    <img class="provide-factory" src="/img/factory.svg">
+                                    <div class="provide-text">ICN Polfa Rzeszow S.A.</div>
+                                </div>
+                            </div>
+                            <div class="product-buttons">
+                                <div class="find-cheaper" but>Найти дешевле</div>
+                            </div>
+                        </div>
+                        <div class="price-block">
+                            <div class="price-element">
+                                <div>
+                                    <div class="price product-price">
+                                        <div class="sale">12 789</div>
+                                        <div class="sale-pen">00</div>
+                                    </div>
+                                </div>
+                                <div class="product-buy-btn on-order" but>Под заказ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uniq-inform">
+                        <div class="uniq-inform-text">Подавляет болезнетворные микроорганизмы</div>
+                        <div class="favor-heart" but>В избранноe</div>
+                    </div>
+                    <div class="grade-mark">
+                        <div heartGrade></div>
+                    </div>
+                    <div class="grade-mark2">
+                        <div closeout></div>
+                    </div>
+                    <div class="grade-mark3">
+                        <div greenHeart></div>
+                    </div>
+                    <div class="grade-mark4">
+                        <div top></div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="base-inform">
+                        <div class="product-pic">
+                            <img src="/img/abaktal.jpg">
+                        </div>
+                        <div class="titels">
+                            <div>
+                                <div class="product-name-basket">
+                                    Бисептол 480 ампулы 96мг/мл №10 концентрат для приготовления раствора для инфузии
+                                </div>
+                                <div class="product-provide">
+                                    <img class="provide-factory" src="/img/factory.svg">
+                                    <div class="provide-text">ICN Polfa Rzeszow S.A.</div>
+                                </div>
+                            </div>
+                            <div class="product-buttons">
+                            </div>
+                        </div>
+                        <div class="price-block">
+                            <div class="price-element">
+                                <div>
+                                    <div class="price product-price was-sale">
+                                        <div class="was-sale-text">20.05.22</div>
+                                    </div>
+                                </div>
+                                <div class="product-buy-btn subscribe" but>Подписаться</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uniq-inform">
+                        <div class="uniq-inform-text">Подавляет болезнетворные микроорганизмы</div>
+                        <div class="favor-heart" but>В избранноe</div>
+                    </div>
+                    <div class="grade-mark">
+                        <div heartGrade></div>
+                    </div>
+                    <div class="grade-mark2">
+                        <div closeout></div>
+                    </div>
+                    <div class="grade-mark3">
+                        <div greenHeart></div>
+                    </div>
+                    <div class="grade-mark4">
+                        <div top></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-block">
+                <div class="most-inform">
+                    <div class="ovita-inform">
+                        <div class="logo">
+                            <img src="/img/Ovita-logo.svg">
+                        </div>
+                        <div class="law-inform">ООО «Полиантес» Юр.адрес: 690091, Приморский край, Владивосток, ул. Светланская, 37</div>
+                    </div>
+                    <div class="inform-position">
+                        <a href="/info/order.html">Как сделать заказ?</a>
+                        <a href="">Аптеки и оптики</a>
+                        <a href="/info/aboutus.html">О компании</a>
+                    </div>
+                    <div class="inform-position">
+                        <a href="">Вакансии</a>
+                        <a href="">Каталог ДЛО</a>
+                        <a href="">Реквизиты и лицензии</a>
+                    </div>
+                    <div class="help-connection">
+                        <div class="footer-number">+7 (423) 2-404-404</div>
+                        <div class="call-back white-but" but>Заказать обратный звонок</div>
+                        <div class="call-help white-but" but>Служба поддержки клиентов</div>
+                    </div>
+                </div>
+                <div class="footnote">Настоящий интернет-ресурс носит исключительно информационный характер, и ни при каких обстоятельствах не может считаться офертой и не является приглашением делать оферты в соответствии с действующим законодательством Российской Федерации. Внешний вид товара может отличаться от изображённого на фотографии.  ООО «Полиантес» не осуществляет продажу и/или доставку товаров, информация о которых размещена на настоящем интернет-ресурсе «ovita.ru». Содержимое сайта является интеллектуальной собственностью Полиантес. При перепечатке обязательно указание ссылки на источник.</div>
+            </div>
+        </div>
+    </footer>
+    <script src="/script/index.js"></script>
+</body>
+</html>

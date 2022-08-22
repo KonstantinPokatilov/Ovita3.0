@@ -1,0 +1,190 @@
+main[search] .form-container {
+    background-color: white;
+    padding: 20px 20px 5px 20px;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 20px;  
+}
+
+.form-container > [prop="filter-arrow"] {
+    cursor: pointer;
+}
+
+.form-container > div[class]:not(:last-child):not(:first-child) {
+    padding: 15px 0;
+}
+
+.form-container > div:first-child {
+    padding-bottom: 15px;
+}
+
+div[prop="filter-arrow"] {
+    border-top: 1px solid #F2F2F2;
+}
+
+.filter-arrow {
+    width: 13px;
+    height: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.search-filter {
+    display: flex;
+    align-items: center;
+}
+
+.search-filter::before {
+    content: '';
+    background: url(/img/filter-icon.svg) no-repeat center;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 9px;
+}
+
+
+[prop="price"] {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+[prop="price"] input:first-child {
+    margin-right: 10px;
+}
+
+[prop="price"] input {
+    padding: 2.5px 0px 2.5px 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.form-checkboxes {
+    display: flex;
+}
+
+main[search] .checkbox-block {
+    margin-right: 10px;
+}
+
+.form-checkboxes:not(:first-child) {
+    margin-top: 7px;
+}
+
+.form-checkboxes:last-child {
+    margin-bottom: 15px;
+}
+
+.elements-sorting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: white;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.name-price-sorting {
+    color: #7A4DAD;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.name-price-sorting::before {
+    content: '';
+    background: url(/img/up-down-filter.svg) no-repeat center;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 6px;
+}
+
+.elements-sorting-count {
+    display: flex;
+    color: #7A4DAD;
+}
+
+.elements-sorting-count > div {
+    background-color: #F2F2F2;
+    padding: 0 4px;
+    cursor: pointer;
+    border-radius: 1px;
+    font-size: 12px;
+}
+
+.elements-sorting-count > div:not(:last-child) {
+    margin-right: 6px;
+}
+
+.sorting-types-container [select],
+.elements-sorting-count [select] {
+    filter: none;
+    background-color: #7A4DAD;
+    color: white;
+}
+
+.sorting-types-container {
+    background: #FFFFFF;
+    box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.13);
+    border-radius: 1px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    left: 0px;
+}
+
+.type-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #EFE9F6;
+    margin-right: 10px;
+
+}
+
+.sorting-type {
+    display: flex;
+    align-items: baseline;
+    cursor: pointer;
+}
+
+.sorting-type div {
+    cursor: pointer;
+}
+
+.sorting-type:not(:first-child) {
+    border-top: 1px solid #F2F2F2;
+    padding-top: 8px;
+    margin-top: 8px;
+}
+
+.was-sale {
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.was-sale-text {
+    color: #7C7B7E;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.was-sale-text::before {
+    content: 'Был в продаже';
+}
+
+.subscribe {
+    color: #323232;
+    background-color: #F2F2F2;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+

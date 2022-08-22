@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.product-description {
+    display: flex;
+    width: 900px;
+    flex-direction: column;
+}
+
+.basic-description {
+    background-color: white;
+    padding: 10px 20px 20px 20px;
+    margin-top: 20px;
+}
+
+.basic-description > div {
+    margin-top: 10px;
+}
+
+.prop8::before {content: 'Описание';}
+.prop9::before {content: 'Состав';}
+.prop10::before {content: 'Условия хранения';}
+.prop11::before {content: 'Фармакологическое действие';}
+.prop12::before {content: 'Показания';}
+.prop13::before {content: 'Противопоказания';}
+.prop14::before {content: 'Побочные действия';}
+.prop15::before {content: 'Лекарственное взаимодействие';}
+.prop16::before {content: 'Передозировка';}
+
+.full-description > div {
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+    white-space: pre-line;
+}
+.full-description > div::before {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+

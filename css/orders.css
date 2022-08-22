@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+.orders-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-title {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.order .base-inform {
+    background-color: white;
+    height: 105px;
+    box-sizing: border-box;
+}
+
+.order-number-address {
+    width: 124px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.order-number {
+    font-weight: 600;
+}
+
+.order-number::before {
+    content: 'Заказ № ';
+}
+
+.base-inform .grey-btn {
+    margin-top: 0;
+    font-size: 12px;
+    background-color: #F2F2F2;
+}
+
+.order-cancel {
+    color: #7C7B7E;
+    margin-top: 0;
+    font-size: 12px;
+    background-color: white;
+    border: 1px solid #C1C1C1;
+    text-align: center;
+    padding: 4px;
+}
+
+.order-cancel::before {
+    content: '';
+    background: url(/img/del-grey.svg) no-repeat left;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 4px;
+}
+
+.order-status-price {
+    width: 124px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-status {
+    box-sizing: border-box;
+    font-size: 12px;
+    width: 170px;
+    text-align: center;
+    padding: 4px;
+}
+
+.order-status-background {
+    display: flex;
+    width: calc(100% - 170px);
+    background-color: #FDE9CC;
+    font-weight: 600;
+    align-items: center;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.order-status-background::before {
+    content: 'Заказ № ';
+    
+    margin-right: 4px;
+
+}
+
+.order-status-back-block {
+    display: flex;
+}
+
+.sber {
+    color: #06984A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    background-color: white;
+    border: 1px solid #06984A;;
+    width: 100%;
+    padding: 4px;
+}
+
+.sber::before {
+    content: '';
+    background: url(/img/sber.svg) no-repeat center;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+/* .sber-to-pay {
+    background-color: #06984A;
+    color: white;
+} */
+
+.sber-to-pay::before {
+    background: url(/img/sber.svg) no-repeat center;
+}
+
+.order-inform::before {
+    content: '';
+    background: url(/img/order-clock-grey.svg) no-repeat center;
+}
+.order .uniq-inform {
+    border-top: 1px solid #F2F2F2;
+    color: #7C7B7E;
+
+}
+
+.uniq-order-flex {
+    display: flex;
+}
+
+.order-date {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-show-products {
+    padding: 4px 12px;
+    text-align: center;
+    color: #7A4DAD;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.order-show-products::before {
+    content: '';
+    background: url(/img/show-goods.svg) no-repeat center;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+.orders .order:not(:first-child) {
+    margin-top: 20px;
+}
+
+.order-price {
+    display: flex;
+    align-items: center;
+}
+
+.order-ready .order-status-background {
+    background-color: #B1E9CB;
+}
+
+.order-ready .order-status {
+    background-color: #06984A;
+    color: white;
+}
+
+.online-paid .sber {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    color: #7C7B7E;
+}
+
+.online-paid .sber::before {
+    background: url(/img/sber-grey.svg) no-repeat center;
+}
+
+.order-canceled .order-status-background {
+    background-color: #FDD5CC;
+} 
+
+.order-canceled .order-status {
+    background-color: #F84A13;
+    color: white;
+}
+
+.order-canceled .order-number-address {
+    justify-content: center;
+}
+
+.order-canceled .order-status-price {
+    justify-content: center;
+}
+
+.order-canceled .base-inform {
+    height: 60px;
+}
+
+.order-given .order-status-background {
+    background-color: white;
+    border-right: 1px solid #F2F2F2;
+} 
+
+.order-given .order-status {
+    background-color: white;
+    color: black;
+}
+
+.order-given .order-status-back-block {
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.order-given .base-inform {
+    height: 60px;
+}
+
+.order-given .order-number-address {
+    justify-content: center;
+}
+
+.order-given .order-status-price {
+    justify-content: center;
+}

@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.products-block { width: 630px; }
+
+.form-container {
+    width: 250px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+main[favorites] .form-container {
+    margin-left: 0;
+    margin-right: 20px;
+}  
+
+main[orders] .form-container {
+    margin-left: 0;
+    margin-right: 20px;
+    margin-top: 40px;
+} 
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 0 20px;
+}
+
+.form-block > input {
+    padding: 8px 10px;
+    margin-top: 20px;
+}
+
+.form-block > div {
+    margin-top: 20px;
+}
+
+.form-title {
+    display: flex;
+    align-items: center;
+}
+
+.form-title::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.basket-form-title::before {
+    background: url(/img/bag.svg) no-repeat center;
+}
+
+.basket-total-price {
+    display: flex;
+    align-items: center;
+}
+
+.basket-sale::before {
+    content: 'Итого: ';
+}
+
+.basket-product-address-delete {
+    display: flex;
+    justify-content: space-between;
+    background-color: #794dac;
+    padding: 8px 12px;
+    margin-top: 20px;
+}
+
+.basket-product-address-delete:first-child {
+    margin-top: 0;
+}
+
+.basket-product-address { color: white; }
+
+.basket-product-address::before {
+    content: '';
+    background: url(/img/top_city.svg) left/60% no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+.basket-address-delete {
+    background: url(/img/white-delete.svg) no-repeat center;
+    width: 20px;
+    height: 20px;
+}
+
+.basket-product-date {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5E3B87;
+    color: white;
+    padding: 8px 17px 8px 10px;
+}
+
+.basket-product-date-make::before { content: 'Будет создано '; }
+
+.basket-product-date-make::after{ content: 'заказа: '; }
+
+.basket-product-date-order::before { content: ' на '; }
+
+.basket-product-date-more-order::before { content: ' и на '; }
+
+.basket-product-date-container { display: flex; }
+
+.checkbox-take-all { display: flex; }
+
+.take-all-text { margin-left: 10px; }
+
+.basket-product-ready {
+    background-color: #EFE9F6;
+    color: #7A4DAD;
+}
+
+.orange-text {
+    color: #CF8210;
+    background-color: #EA8C00;
+}
+
+.product-ready-text { 
+    padding: 8px 10px;
+    font-weight: 600; 
+}
+
+.product-ready-text::before { content: 'Будет готов '; }
+
+.product-name-basket { width: 340px; }
+
+.change-pharmacy-but {
+    background-color: #7A4DAD;;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+.product-available-pharmacy::before { content: 'В наличии '; }
+
+.available-tomorrow::before { content: 'Завтра '; }
+
+.product-available-pharmacy::after { content: ' шт.'; }
+
+.counter-container {
+    display: flex;
+    justify-content: space-between;
+    color: #7A4DAD;
+    background-color: #F2F2F2;
+    padding: 5px 10px;
+}
+
+.counter-container > div {
+    font-size: 16px;
+}
+
+.border-bg-product-top {
+    background-color: white;
+}
+
+.orange-text {
+    background-color: #FDE9CC;
+    color: #CF8210;
+}
+
+.border-product-top {
+    border-top: 2px solid #f2f2f2;;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.switch-toggle-checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.switch-toggle-label {
+    cursor: pointer;
+    width: 40px;
+    height: 18px;
+    background-color: #C1C1C1;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.switch-toggle-label::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.switch-toggle-checkbox:checked + .switch-toggle-label {
+    background-color: #6F4B99;
+}
+
+.switch-toggle-checkbox:checked + .switch-toggle-label::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+.switch-toggle-label:active::after {
+    width: 30px;
+}
+
+.basket-online-pay {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-buy-btn {
+    width: 190px;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+}
+
+.grey-btn {
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+    background-color: #C1C1C1;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.uniq-inform-basket {
+    margin: 0 20px;
+    background-color: #FFDDD6;
+    color: black;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+.uniq-inform-basket::before {
+    content: '';
+    background: url(/img/inform-icon-black.svg) no-repeat center;
+}
+
+.basket-products-block:not(:first-child) {
+    margin-top: 20px;
+}
